@@ -235,6 +235,9 @@ a:hover {
   height: 42rem;
   margin-bottom: 2.5rem;
 }
+.rewiews-block {
+  text-align: center;
+}
 .rewiews-title {
   margin-bottom: 8rem;
 }
@@ -244,6 +247,10 @@ a:hover {
   color: #040a18;
   font-size: 1.8rem;
   line-height: 1.9rem;
+  text-align: left;
+}
+.rewiews-block {
+  width: 100%;
 }
 .rewiews-img {
   width: 100%;
