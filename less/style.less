@@ -1,0 +1,327 @@
+//Fonts
+.roboto(){font-family: 'Roboto', sans-serif;}
+.rubik(){font-family: 'Rubik', sans-serif;}
+
+//Colors
+@light: #fff;
+@black: #000;
+@button:  #ce2222;
+@text: #040a18;
+
+//Basic
+
+html{
+    font-size: 10px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+button, 
+button:active, 
+button:focus {
+    outline: none;
+}
+input,
+input:active,
+input:focus{
+	outline: none;
+}
+textarea,
+textarea:active,
+textarea:focus{
+	outline: none;
+}
+a,
+a:active,
+a:focus{
+	outline: none;
+}
+a:hover{
+    text-decoration: none;
+    cursor: pointer;
+}
+.stop{
+    overflow-y: hidden;
+}
+.button{
+    .rubik();
+    font-weight: 500;
+    color: @light;
+    font-size: 1.9rem;
+    padding: 2.5rem 5rem;
+    border: none;
+     transform: skew(20deg);
+     display: inline-block;
+     transition: 0.3s ease-out;
+     box-shadow:  7px 7px 5px  rgba(0,0,0,0.20);
+    &-red{
+        background-color: @button;
+         border: 2px solid @button;
+         &:hover{
+            background-color: @text;
+            border-radius: 12px;
+        }
+    }
+    &-black{
+        background-color: @text;
+        border: 2px solid @text;
+        &:hover{
+            background-color: @button;
+            border-radius: 12px;
+        }
+    }
+    span{
+        transform: skew(-20deg);
+        display: inline-block;
+        text-transform: uppercase;
+    }
+    
+
+}
+.section{
+    &-title{
+        .rubik();
+        font-weight: 500;
+        color: @text;
+        font-size: 4rem;
+        span{
+            color: @button;
+        }
+    }
+}
+
+.main{
+    padding: 8rem 0rem;
+    &-first{
+        background: url(../img/main/bg.jpg) no-repeat center;
+        background-size: cover;
+    }
+    &-title{
+        padding: 0;
+        margin-bottom: 4rem;
+        .rubik();
+        font-weight: 500;
+        font-size: 5.2rem;
+        color: @light;
+        text-transform: uppercase;
+
+    }
+    &-sename{
+        padding: 0;
+        margin-bottom: 7rem;
+        color: @light;
+        .rubik();
+        font-weight: 500;
+        font-size: 2.1rem;
+    }
+}
+
+.about{
+    padding: 14rem 0rem;
+    background: url(../img/about/bg-07.png) no-repeat center;
+    background-size: cover;
+    &-title{
+        .rubik();
+        font-weight: 500;
+        color: @text;
+        font-size: 4rem;
+        span{
+            color: @button;
+        }
+    }
+}
+
+.advantages{
+    &-title{
+        margin-bottom: 6rem;
+    }
+    &-block{
+        width: 100%;
+        margin-bottom: 6rem;
+    }
+    &-blocking{
+        display: flex;
+        align-items: center;
+        min-height: 10rem;
+    }
+    &-img{
+        width: 6rem;
+        margin-right: 1rem;
+        
+    }
+    &-name{
+        .rubik();
+        font-weight: 600;
+        color: @text;
+        font-size: 1.7rem;
+    }
+    &-paragraph{
+        font-size: 1.4rem;
+        .rubik();
+        font-weight: 500;
+        color: @text;
+    }
+    &-spec{
+        width: 100%;
+        background-color: @button;
+        transform: skew(20deg);
+        text-align: center;
+        padding: 3rem 0rem;
+        margin-bottom: 6rem;
+        &_name{
+            display: inline-block;
+            transform: skew(-20deg);
+            text-align-last: left;
+            .rubik();
+            font-weight: 500;
+            color: @light;
+            font-size: 4rem;
+            line-height: 4.2rem;
+            padding: 0;
+            margin: 0;
+        }
+    }
+
+}
+
+.times{
+    background-color: @text;
+    padding: 8rem 0rem;
+    &-img{
+        width: 100%;
+    }
+    &-title{
+        .rubik();
+            font-weight: 500;
+            color: @light;
+            font-size: 4rem;
+            line-height: 4.2rem;
+            padding: 0;
+            margin-bottom: 4rem;
+    }
+    &-paragraph{
+        .rubik();
+        font-weight: 500;
+        font-size: 1.9rem;
+        color: @light;
+        padding: 0;
+        margin-bottom: 7rem;
+    }
+}
+.dop-services{
+    padding: 9rem 10rem;
+    background: url(../img/dop-services/bg-07.png) no-repeat center;
+    background-size: cover;
+    &-button{
+        padding: 2.5rem 2rem;
+    }
+    &_block{
+        margin-bottom: 7.5rem;
+    }
+    &-title{
+        margin-bottom: 5rem;
+    }
+}
+
+.form{
+    padding: 10rem 0rem;
+    &-main{
+        background-color: @button;
+        &-title{
+            color: @light;
+        }
+    }
+    &-title{
+        margin-bottom: 5rem;
+    }
+    &-input{
+        width: 100%;
+        border: none;
+        background: transparent;
+        color: @light;
+        .rubik();
+        border-bottom: 3px solid @light;
+        font-weight: 500;
+        font-size: 1.9rem;
+        margin-bottom: 6rem;
+        padding: 2rem 1rem;
+        &::placeholder{
+            color: #ffd4d4;
+        }
+
+    }
+    &-block{
+        text-align: center;
+    }
+}
+.rewiews{
+    padding: 10rem 0rem;
+    &-video{
+        // width: 60rem;
+        height: 42rem;
+        margin-bottom: 2.5rem;
+    }
+    &-title{
+        margin-bottom: 8rem;
+    }
+    &-paragraph{
+        .roboto();
+        font-weight: 500;
+        color: @text;
+        font-size: 1.8rem;
+        line-height: 1.9rem;
+    }
+    &-img{
+        width: 100%;
+    }
+    &-blocking{
+        padding: 0rem 3rem;
+        &-title{
+            padding: 0;
+            .rubik();
+        font-weight: 500;
+        color: @text;
+        font-size: 4rem;
+        margin-bottom: 11rem;
+        }
+    }
+}
+.swiper{
+    &-container{
+        padding: 2rem 0rem;
+        margin-bottom: 10rem;
+    }
+}
+
+.facts{
+    background-color: @text;
+    padding: 10rem 0rem 6rem 0rem;
+    &-title{
+        color: @light;
+        margin-bottom: 6rem;
+    }
+    &-img{
+        width: 6rem;
+        margin-right: 6rem;
+    }
+    &-block{
+        margin-bottom: 4rem;
+        display: flex;
+        align-items: center;
+    }
+    &-name{
+        .rubik();
+        font-weight: 400;
+        color: @light;
+        font-size: 2rem;
+        line-height: 2.2rem;
+        padding: 0;
+        margin: 0;  
+    }
+}
+
+.news{
+    padding: 10rem 0rem;
+}
