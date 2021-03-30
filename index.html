@@ -5,23 +5,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Лаборатория Автостекла</title>
+    <link rel="icon" href="./img/logo-07.png">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="./css/jquery-ui-timepicker-addon.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="./css/swiper.min.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <header>
-
+    <header class="header">
+        <div class="container">
+            <div class="header__body">
+                <a href="./index.html"  class="header__logo">
+                    <img src="./img/logo-07.png" alt="">
+                </a>
+                <div class="header__burger">
+                    <span></span>
+                </div>
+                <nav class="header__menu">
+                    <ul class="header__list">
+                        <li><a href="./index.html" class="popup-btn header__link">Онлайн-запись</a></li>
+                        <li><a href="javascript://0"  onclick="slowScroll('#services')" class="header__link">Услуги</a></li>
+                        <li><a href="javascript://0"  onclick="slowScroll('#contacts')" class="header__link">Контакты</a></li>
+                        <li><a href="javascript://0"  onclick="slowScroll('#rewiews')" class="header__link">Отзывы</a></li>
+                        <li class="header__link-phone-mobile"><a href="tel:+7(3452)533-444" class="header__link-phone header__link-phone-mobile">+7(3452)533-444</a></li>
+                    </ul>
+                   
+                </nav>
+                <div class="header__phone-block">
+                    <a href="tel:+7(3452)533-444" class="header__link-phone">+7(3452)533-444</a>
+                </div>
+ 
+            </div>
+        </div>
     </header>
     <main>
         <section class="section main main-first">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-12">
+                    <div class="col-lg-12 col-md-12">
                         <h1 class="main-title">
                             Быстрая и качественная замена автостекол в Тюмени
                         </h1>
@@ -32,8 +57,9 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-lg-6">
-                        <button class="button button-red main-button"><span>Записаться на бесплатный осмотр</span></button>
+                    <div class="col-lg-7 col-10 offset-1 offset-md-0">
+                        <button class=" popup-btn button button-red main-button"><span>Записаться на бесплатный осмотр</span></button>
+                        
                     </div>
                 </div>
             </div>
@@ -41,12 +67,15 @@
         <section class="section about">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-7 offset-lg-4">
+                    <div class="col-lg-7 offset-lg-4 col-md-12 offset-md-0">
                         <h3 class="about-title">
                             ЛАБОРАТОРИЯ <span>АВТОСТЕКЛА</span> - это команда профессионалов любящих свое дело.
                         </h3>
                     </div>
                 </div>
+            </div>
+            <div class="about-block-mobile">
+                <img src="./img/about/mobile-07.png" alt="" class="about-block-mobile-img">
             </div>
         </section>
         <section class="section advantages">
@@ -57,21 +86,21 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-lg-3 advantages-block">
+                    <div class="col-lg-3 col-md-4 col-10 advantages-block">
                         <div class="advantages-blocking">
                             <img src="./img/advantages/first-07.png" alt="" class="advantages-img">
                             <h5 class="advantages-name">Стекло в наличии</h5>
                         </div>
                         <p class="advantages-paragraph">У нас представлен широкий модельный ряд автостекол для марок автомобилей. Даже для самых редких или  старых.</p>
                     </div>
-                    <div class="col-lg-3 offset-lg-1 advantages-block">
+                    <div class="col-lg-3 col-md-4 offset-md-0 offset-lg-1 col-10 offset-2 advantages-block">
                         <div class="advantages-blocking">
                             <img src="./img/advantages/twice-07.png" alt="" class="advantages-img">
                             <h5 class="advantages-name">Низкие цены</h5>
                         </div>
                         <p class="advantages-paragraph">Благодаря долгосрочному соотрудничеству с поставщиками автостекол, мы продаем стекла по демократической стоимсоти.</p>
                     </div>
-                    <div class="col-lg-3 offset-lg-1 advantages-block">
+                    <div class="col-lg-3 col-md-4 offset-md-0 col-10 offset-lg-1 advantages-block">
                         <div class="advantages-blocking">
                             <img src="./img/advantages/three.png" alt="" class="advantages-img">
                             <h5 class="advantages-name">Бессрочная гарантия</h5>
@@ -80,7 +109,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-lg-12">
+                    <div class="col-lg-12 col-11 offset-1 offset-md-0">
                         <div class="advantages-spec">
                             <p class="advantages-spec_name">
                                 Залог хорошего результата - это<br>
@@ -103,14 +132,74 @@
                         <div class="col-lg-7 offset-lg-1">
                             <h5 class="times-title">Мы заменим ваше стекло<br> в течении двух часов!</h5>
                             <p class="times-paragraph">Запишитесь прямо сейчас и зафиксируйте скидку 500 рублей.</p>
-                            <button class="button button-red times-button"><span>Записаться на бесплатный осмотр</span></button>
+                            <button class="popup-btn button button-red times-button"><span>Записаться на бесплатный осмотр</span></button>
+                        </div>
+                        <div class="col-10 offset-1">
+                            <div class="times-button-block">
+                                <button class="popup-btn button button-red times-buttons"><span>Записаться на бесплатный осмотр</span></button>
+                            </div>
                         </div>
 
                 </div>
             </div>
         </section>
+        <section class="companys">
+            <div class="container">
+                <div class="row">
+                   <div class="companys-blocking">
+                    <div class="companys-block">
+                        <div>
+                            <a href="#" class="companys-link">
+                                <img src="./img/png/Hyundai.png" alt="" class="companys-img">
+                            </a>
+                            <a href="#" class="companys-link">
+                                <img src="./img/png/Kia.png" alt="" class="companys-img">
+                            </a>
+                            <a href="#" class="companys-link">
+                                <img src="./img/png/Toyota.png" alt="" class="companys-img">
+                            </a>
+                            <a href="#" class="companys-link">
+                                <img src="./img/png/Citroen.png" alt="" class="companys-img">
+                            </a>
+                            <a href="#" class="companys-link">
+                                <img src="./img/png/Honda.png" alt="" class="companys-img">
+                            </a>
+                        </div>
+                    </div>
+                
 
-        <section class="section dop-services">
+                    <div class="companys-block">
+                        <div>
+                            <a href="#" class="companys-link">
+                                <img src="./img/png/Renault.png" alt="" class="companys-img">
+                            </a>
+                            <a href="#" class="companys-link">
+                                <img src="./img/png/Lexus.png" alt="" class="companys-img">
+                            </a>
+                            <a href="#" class="companys-link">
+                                <img src="./img/png/Lada.png" alt="" class="companys-img">
+                            </a>
+                            <a href="#" class="companys-link">
+                                <img src="./img/png/Mercedes.png" alt="" class="companys-img">
+                            </a>
+                        </div>
+                    </div>
+                   </div>
+                </div>
+                <div class="row">
+
+                </div>
+                <div class="row">
+                    <div class="col-md-12 col-8 offset-md-0 offset-2">
+                        <div class="companys-button-block">
+                            <button class="button button-red companys-button"><span>Больше авто</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section dop-services" id="services">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
@@ -120,10 +209,10 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-lg-4"><button class="button button-black dop-services_block"><span>Ремонт стекла</span></button></div>
-                    <div class="col-lg-5 "><button class="button button-red dop-services-button dop-services_block"><span>Антидождь Aquapel</span></button></div>
-                    <div class="col-lg-4 offset-lg-0"><button class="button button-red dop-services_block"><span>Тонировка</span></button></div>
-                    <div class="col-lg-4"><button class="button button-black dop-services-button dop-services_block"><span>Полировка фар и стекл</span></button></div>
+                    <div class="col-lg-4 col-md-4 col-10 offset-1 offset-md-0"><a href="./service.html"><button class="button button-black dop-services_block dop-services-mobile"><span>Ремонт стекла</span></button></a></div>
+                    <div class="col-lg-5 col-md-5 col-10 offset-1 offset-md-0"><a href="./service.html"><button class="button button-red dop-services-button dop-services_block dop-services-mobile"><span>Антидождь Aquapel</span></button></a></div>
+                    <div class="col-lg-4 offset-lg-0 col-md-4 offset-md-0 col-10 offset-1 "><a href=""><button class="button button-red dop-services_block dop-services-mobile"><span>Тонировка</span></button></a></div>
+                    <div class="col-lg-4 col-md-4 col-10 offset-1 offset-md-0"><a href="./service.html"><button class="button button-black dop-services-button dop-services_block dop-services-mobile"><span>Полировка фар и стекл</span></button></a></div>
                 </div>
             </div>
         </section>
@@ -137,13 +226,13 @@
                                 Оставить заявку
                             </h3>
                         </div>
-                        <div class="col-lg-6"><input type="text" placeholder="ФИО"  required class="form-input"></div>
-                        <div class="col-lg-6"><input type="text" placeholder="Телефон" required class="form-input"></div>
-                        <div class="col-lg-6"><input type="text" placeholder="Выбрать удобную дату" id="date" required class="form-input"></div>
-                        <div class="col-lg-6"><input type="text" placeholder="Выбрать удобное время" id="time" required class="form-input"></div>
-                        <div class="col-lg-12">
+                        <div class="col-lg-6 col-md-6"><input type="text" placeholder="ФИО"  required class="form-input"></div>
+                        <div class="col-lg-6 col-md-6"><input type="text" placeholder="Телефон" required class="form-input"></div>
+                        <div class="col-lg-6 col-md-6"><input type="text" placeholder="Выбрать удобную дату" id="date" required class="form-input"></div>
+                        <div class="col-lg-6 col-md-6"><input type="text" placeholder="Выбрать удобное время" id="time" required class="form-input"></div>
+                        <div class="col-lg-12 col-md-12 col-10 offset-1 offset-md-0">
                             <div class="form-block">
-                                <button class="button button-black"><span>Отправить</span></button>
+                                <button class="button button-black form-button"><span>Отправить</span></button>
                             </div>
                         </div>
                     </div>
@@ -151,7 +240,7 @@
             </form>
         </section>
 
-        <section class="section rewiews">
+        <section class="section rewiews" id="rewiews">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
@@ -235,13 +324,18 @@
                    
                 </div>
                 <div class="row">
-                    <div class="col-lg-5">
+                    <div class="col-lg-5 order-lg-first order-md-twice order-twice col-12">
                         <img src="./img/rewiews/car-07.png" alt="" class="rewiews-img">
                     </div>
-                    <div class="col-lg-7">
+                    <div class="col-lg-7 order-lg-twice order-md-first order-first col-12">
                         <div class="rewiews-blocking">
                             <h5 class="rewiews-blocking-title">Приедем и починим ваше австостекло в любом месте!</h5>
-                            <button class="button button-red rewiews-button"><span>Оставить заявку</span></button>
+                            <button class="popup-btn button button-red rewiews-button"><span>Оставить заявку</span></button>
+                        </div>
+                    </div>
+                    <div class="col-8 offset-2">
+                        <div class="rewiews-mobile-block">
+                            <button class="popup-btn button button-red rewiews-button-mobile"><span>Оставить заявку</span></button>
                         </div>
                     </div>
                 </div>
@@ -308,45 +402,222 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-lg-3">
-                        <div class="news-block">
-                            <img src="" alt="" class="news-img">
-                            <h5 class="news-name"></h5>
-                            <p class="news-paragpraph"></p>
-                        </div>
+                    <div class="col-lg-3 col-md-3 col-8 offset-2 offset-md-0">
+                        <a href="#" class="news-link">
+                            <div class="news-block">
+                                <img src="./img/news/photo-07.png" alt="" class="news-img">
+                                <h5 class="news-name">Название новости</h5>
+                                <p class="news-paragpraph">Краткое превью</p>
+                            </div>
+                        </a>
                     </div>
-                    <div class="col-lg-3">
-                        <div class="news-block">
-                            <img src="" alt="" class="news-img">
-                            <h5 class="news-name"></h5>
-                            <p class="news-paragpraph"></p>
-                        </div>
+                    <div class="col-lg-3 col-md-3 col-8 offset-2 offset-md-0">
+                        <a href="#" class="news-link">
+                            <div class="news-block">
+                                <img src="./img/news/photo-07.png" alt="" class="news-img">
+                                <h5 class="news-name">Название новости</h5>
+                                <p class="news-paragpraph">Краткое превью</p>
+                            </div>
+                        </a>
                     </div>
-                    <div class="col-lg-3">
-                        <div class="news-block">
-                            <img src="" alt="" class="news-img">
-                            <h5 class="news-name"></h5>
-                            <p class="news-paragpraph"></p>
-                        </div>
+                    <div class="col-lg-3 col-md-3 col-8 offset-2 offset-md-0">
+                        <a href="#" class="news-link">
+                            <div class="news-block">
+                                <img src="./img/news/photo-07.png" alt="" class="news-img">
+                                <h5 class="news-name">Название новости</h5>
+                                <p class="news-paragpraph">Краткое превью</p>
+                            </div>
+                        </a>
                     </div>
-                    <div class="col-lg-3">
-                        <div class="news-block">
-                            <img src="" alt="" class="news-img">
-                            <h5 class="news-name"></h5>
-                            <p class="news-paragpraph"></p>
+                    <div class="col-lg-3 col-md-3 col-8 offset-2 offset-md-0">
+                        <a href="#" class="news-link">
+                            <div class="news-block">
+                                <img src="./img/news/photo-07.png" alt="" class="news-img">
+                                <h5 class="news-name">Название новости</h5>
+                                <p class="news-paragpraph">Краткое превью</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section sertificates">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h3 class="about-title sertificates-title">
+                            Сертификаты
+                        </h3>
+                    </div>
+                </div>
+            </div>
+          <div class="container">
+           <div class="row">
+               <div class="col-lg-12">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="sertificates-block">
+                                        <img src="./img/certificates/certificates-08.png" alt="" class="sertificates-img">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="sertificates-block">
+                                        <img src="./img/certificates/certificates-08.png" alt="" class="sertificates-img">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="sertificates-block">
+                                        <img src="./img/certificates/certificates-08.png" alt="" class="sertificates-img">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      </div> 
+                      <div class="swiper-slide">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="sertificates-block">
+                                        <img src="./img/certificates/certificates-08.png" alt="" class="sertificates-img">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      </div> 
+                      <div class="swiper-slide">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="sertificates-block">
+                                        <img src="./img/certificates/certificates-08.png" alt="" class="sertificates-img">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      </div>              
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <!-- Add Arrows -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                  </div>
+               </div>
+           </div>
+          </div>
+        </section>
+
+        <section class="section contacts" id="contacts">
+            <div class="contacts-left">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <h3 class="about-title contacts-title">
+                                Контакты
+                            </h3>
+                            <h5 class="contacts-name">Лаборатория<br>Автостекла</h5>
+                            <div class="contacts-block">
+                                <h5 class="contacts-link-name">Адрес:</h5>
+                                <p class="contacts-link">г.Тюмень, Дамбовская улица, 2с8</p>
+                                <p class="contacts-link">г.Тюмень, Молодёжная улица, 57</p>
+                            </div>
+                            <div class="contacts-block">
+                                <h5 class="contacts-link-name">Режим работы:</h5>
+                                <p  class="contacts-link">пн-пт 8:00-20:00</p>
+                                <p  class="contacts-link">сб-вс 9:00-19:00</p>
+                            </div>
+                            <div class="contacts-block">
+                                <h5 class="contacts-link-name">Телефон:</h5>
+                                <a href="tel:+7(3452)533-444" class="contacts-link">+7 (3452) 533-444</a>
+                            </div>
+                            <div class="contacts-block ">
+                                <a href="#" class="contacts-social-link">
+                                    <img src="./img/contacts/vk-09.png" alt="" class="contacts-img">
+                                </a>
+                                <a href="" class="contacts-social-link">
+                                    <img src="./img/contacts/insta-09.png" alt="" class="contacts-img">
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="contacts-right">
+                <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A1cf06fe2585e27a7c59b71bb2a6db92b298203dd1c2d562d02e5eb6d5182d4a4&amp;source=constructor" width="100%" height="100%" frameborder="0"></iframe>
             </div>
         </section>
 
         
         
     </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-blocking">
+                <a href="./index.html" class="foooter-link">
+                    <img src="./img/logo-07.png" alt="" class="footer-img">
+                </a>
+                <div class="footer-block-cop">
+                    <span class="footer-span">copyright 2021</span>
+                </div>
+                <div class="footer-block-studio">
+                    <a href="http://gm29.ru/" class="footer-link-studio">site by Digital Marketing</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="popup">
+        <div class="popup-dialog" id="popup-dialog">
+          <div class="popup-content  ">
+            <button class="popup-close">&#215;</button>
+            <div class="popup-form">
+                <form action="#" class="form form-popup">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <h3 class="about-title form-main-title form-title">
+                                    Регистрация
+                                </h3>
+                            </div>
+                            <div class="col-lg-6 col-md-6"><input type="text" placeholder="ФИО"  required class="form-input"></div>
+                            <div class="col-lg-6 col-md-6"><input type="text" placeholder="Телефон" required class="form-input"></div>
+                            <div class="col-lg-6 col-md-6"><input type="text" placeholder="Марка и модель Авто" id="model" required class="form-input"></div>
+                            <div class="col-lg-6 col-md-6"><input type="text" placeholder="Год выпуска Авто" id="year" required class="form-input"></div>
+                            <div class="col-lg-12 col-md-12 col-10 offset-1 offset-md-0">
+                                <div class="form-block">
+                                    <button class="button button-black form-button"><span>Отправить</span></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+          </div>
+        </div>
+      </div> 
+
     <script src="./js/jquery-3.0.0.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="./js/jquery-ui-timepicker-addon.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="./js/swiper.min.js"></script>
     <script src="./js/script.js"></script>
+
 </body>
 </html>
