@@ -1,0 +1,9 @@
+.swiper-pagination-bullet{
+    background: #fff;
+}
+.swiper-pagination-bullet-active{
+    background:#ce2222;
+}
+.about-block-mobile{
+    padding: 4rem 0rem 0rem 0rem;
+}

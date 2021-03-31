@@ -195,6 +195,44 @@ a:hover {
   font-weight: 500;
   font-size: 2.1rem;
 }
+.service-slider {
+  background-color: #00173e;
+  padding: 8rem 0rem;
+}
+.service-slider-img {
+  width: 100%;
+  padding: 4rem 0rem;
+}
+.service-slider-title {
+  color: #ffffff;
+}
+.service-about-title {
+  min-width: 100%;
+}
+.diskond {
+  padding: 8rem 0rem;
+  background: url(../img/diskond/bg-07.png) no-repeat center;
+  background-size: cover;
+}
+.diskond-title {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 500;
+  font-size: 4rem;
+  color: #ffffff;
+  margin-bottom: 3rem;
+}
+.diskond-paragraph {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+  color: #ffffff;
+  padding: 0;
+  font-size: 2.5rem;
+  margin-bottom: 8rem;
+}
+.swiper-button-next-service:after,
+.swiper-button-prev-service:after {
+  color: #ffffff;
+}
 .about {
   padding: 14rem 0rem;
   background: url(../img/about/bg-07.png) no-repeat center;
@@ -335,6 +373,20 @@ a:hover {
 }
 .form-block {
   text-align: center;
+}
+.form-service {
+  background: url(../img/form/bg-07.png) no-repeat center;
+  background-size: cover;
+}
+.form-service-title {
+  color: #040a18;
+}
+.form-service-input {
+  color: #040a18;
+  border-bottom: 3px solid #040a18;
+}
+.form-service-input::placeholder {
+  color: #040a18;
 }
 .rewiews {
   padding: 10rem 0rem;
@@ -480,9 +532,15 @@ a:hover {
   padding: 8rem 0rem 5rem 6rem;
   width: 40%;
 }
+.contacts-left-service {
+  background-color: #ce2222;
+}
 .contacts-title {
   text-transform: uppercase;
   color: #ce2222;
+}
+.contacts-title-service {
+  color: #040a18;
 }
 .contacts-name {
   font-family: 'Rubik', sans-serif;
@@ -572,9 +630,52 @@ a:hover {
 .companys-link:hover .companys-img {
   filter: invert(100%);
 }
+.companys-linked {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-height: 5rem;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  border: 2px solid #ffffff;
+  transition: 0.3s ease-in;
+  display: none;
+}
+.companys-linked:hover {
+  border: 2px solid #040a18;
+}
+.companys-linked:hover .companys-imges {
+  filter: invert(100%);
+}
+.companys-linked:hover .companys-name {
+  text-decoration: underline;
+}
+.companys-imges {
+  max-height: 5rem;
+  margin-right: 3rem;
+  transition: 0.3s ease-in;
+  padding: 1rem;
+}
+.companys-name {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 500;
+  color: #040a18;
+  font-size: 1.9rem;
+  padding: 0;
+  margin: 0;
+}
 .companys-button-block {
   text-align: center;
   width: 100%;
+}
+.companys-button-two {
+  display: none;
+}
+.block {
+  display: inline-block;
+}
+.flex {
+  display: flex;
 }
 .popup {
   display: none;
@@ -763,6 +864,10 @@ a:hover {
   .header__button {
     display: none;
   }
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none;
+  }
 }
 @media (max-width: 800px) {
   .main-title {
@@ -786,6 +891,17 @@ a:hover {
   }
   .about-title {
     font-size: 3rem;
+  }
+  .about-service {
+    padding: 6rem 0rem;
+    background: #ffffff;
+  }
+  .diskond {
+    background: #ce2222;
+    padding: 6rem 0rem 0rem 0rem;
+  }
+  .diskond-button-block {
+    text-align: center;
   }
   .advantages-spec {
     width: 90%;
@@ -830,10 +946,6 @@ a:hover {
   }
   .rewiews-mobile-block {
     text-align: center;
-  }
-  .swiper-button-next,
-  .swiper-button-prev {
-    display: none;
   }
   .facts {
     padding: 5rem 0rem 3rem 0rem;
@@ -987,5 +1099,11 @@ a:hover {
   .companys-blocking {
     display: flex;
     text-align: center;
+  }
+  .diskond-title {
+    font-size: 2rem;
+  }
+  .diskond-paragraph {
+    font-size: 1.7rem;
   }
 }

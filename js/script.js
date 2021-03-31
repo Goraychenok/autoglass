@@ -85,3 +85,18 @@ jQuery(document).ready(function() {
         $('.header').addClass('active');
     });
 });
+
+$('#companysButton').click(function(){
+  $('.companys-blocking').addClass('none');
+  
+  $('#companysButtonTwo').addClass('block');
+  $('.companys-linked').addClass('flex');
+  $('#companysButton').addClass('none');
+});
+
+$('#companysButtonTwo').click(function(){
+  $('.companys-blocking').addClass('block');
+  $('#companysButton').addClass('block');
+  $('.companys-linked').removeClass('flex');
+  $('#companysButtonTwo').removeClass('block');
+});

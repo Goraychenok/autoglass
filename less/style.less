@@ -218,6 +218,48 @@ a:hover{
         font-size: 2.1rem;
     }
 }
+.service{
+    &-slider{
+        background-color: #00173e;
+        padding: 8rem 0rem;
+        &-img{
+            width: 100%;
+            padding: 4rem 0rem;
+        }
+        &-title{
+            color: @light;
+        }
+    }
+    &-about{
+        &-title{
+            min-width: 100%;
+        }
+    }
+}
+.diskond{
+    padding: 8rem 0rem;
+    background: url(../img/diskond/bg-07.png) no-repeat center;
+    background-size: cover;
+    &-title{
+        .rubik();
+        font-weight: 500;
+        font-size: 4rem;
+        color: @light;
+        margin-bottom: 3rem;
+    }
+    &-paragraph{
+        .rubik();
+        font-weight: 400;
+        color: @light;
+        padding: 0;
+        font-size: 2.5rem;
+        margin-bottom: 8rem;
+    }
+}
+.swiper-button-next-service:after,.swiper-button-prev-service:after{ 
+    color: @light;
+}
+
 
 .about{
     padding: 14rem 0rem;
@@ -343,6 +385,7 @@ a:hover{
 
 .form{
     padding: 10rem 0rem;
+    
     &-main{
         background-color: @button;
         &-title{
@@ -370,6 +413,20 @@ a:hover{
     }
     &-block{
         text-align: center;
+    }
+    &-service{
+        background: url(../img/form/bg-07.png) no-repeat center;
+        background-size: cover;
+        &-title{
+            color: @text;
+        }
+        &-input{
+            color: @text;
+            border-bottom: 3px solid @text;
+            &::placeholder{
+                color: @text;
+            }
+        }
     }
 }
 .rewiews{
@@ -539,10 +596,16 @@ a:hover{
         background-color: @text;
         padding: 8rem 0rem 5rem 6rem;
         width: 40%;
+        &-service{
+            background-color: @button;
+        }
     }
     &-title{
         text-transform: uppercase;
         color:@button;
+        &-service{
+            color: @text;
+        }
     }
     &-name{
         .rubik();
@@ -641,12 +704,55 @@ a:hover{
             }
         }
     }
+    &-linked{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        max-height: 5rem;
+        margin-bottom: 2rem;
+        padding: 1rem;
+        border: 2px solid @light;
+        transition: 0.3s ease-in;
+        display: none;
+        &:hover{
+            .companys-imges{
+                filter: invert(100%);
+            }
+            .companys-name{
+                text-decoration: underline;
+            }
+            border: 2px solid @text;
+        }
+    }
+    &-imges{
+        max-height: 5rem;
+        margin-right: 3rem;
+        transition: 0.3s ease-in;
+        padding: 1rem;
+    }
+    &-name{
+        .rubik();
+        font-weight: 500;
+        color: @text;
+        font-size: 1.9rem;
+        padding: 0;
+        margin: 0;
+    }
     &-button{
         &-block{
             text-align: center;
             width: 100%;
         }
+        &-two{
+            display: none;
+        }
     }
+}
+.block{
+    display: inline-block;
+}
+.flex{
+    display: flex;
 }
 .popup {
     display: none;
@@ -843,6 +949,9 @@ a:hover{
       .header__button {
         display: none;
       }
+      .swiper-button-next, .swiper-button-prev{
+        display: none;
+    }
 }
 
 @media( max-width:800px){
@@ -870,6 +979,19 @@ a:hover{
         }
         &-title{
             font-size: 3rem;
+        }
+        &-service{
+            padding: 6rem 0rem;
+            background: @light;
+        }
+    }
+    .diskond{
+        background: @button;
+        padding: 6rem 0rem 0rem 0rem;
+        &-button{
+            &-block{
+                text-align: center;
+            }
         }
     }
     .advantages{
@@ -922,9 +1044,7 @@ a:hover{
             }
         }
     }
-    .swiper-button-next, .swiper-button-prev{
-        display: none;
-    }
+    
     .facts{
         padding: 5rem 0rem 3rem 0rem;
     }
@@ -1110,6 +1230,14 @@ a:hover{
         &-blocking{
             display: flex;
             text-align: center;
+        }
+    }
+    .diskond{
+        &-title{
+            font-size: 2rem;
+        }
+        &-paragraph{
+            font-size: 1.7rem;
         }
     }
 }
