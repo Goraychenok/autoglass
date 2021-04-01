@@ -178,6 +178,10 @@ a:hover {
   background: url(../img/main/bg.jpg) no-repeat center;
   background-size: cover;
 }
+.main-company {
+  background: url(../img/main/company-13.png) no-repeat center;
+  background-size: cover;
+}
 .main-title {
   padding: 0;
   margin-bottom: 4rem;
@@ -194,6 +198,70 @@ a:hover {
   font-family: 'Rubik', sans-serif;
   font-weight: 500;
   font-size: 2.1rem;
+}
+.company-table {
+  width: 100%;
+}
+.company-tr {
+  width: 100%;
+  background-color: #00173e;
+}
+.company-tr-first {
+  background-color: #f01c1c;
+}
+.company-td {
+  padding: 1rem 0rem;
+  width: 38rem;
+  text-align: center;
+  vertical-align: middle;
+  color: #ffffff;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+  font-size: 2rem;
+  border-bottom: 2px solid #000000;
+  border-right: 4px solid #ffffff;
+}
+.company-td-first {
+  text-transform: uppercase;
+}
+.company-cost {
+  padding: 8rem 0rem;
+}
+.company-cost-title {
+  margin-bottom: 5rem;
+}
+.company-cost-block {
+  text-align: center;
+  margin-top: 6rem;
+}
+.company-about {
+  padding: 10rem 0rem;
+  background: url(../img/about/bg-company-13.png) no-repeat center;
+  background-size: cover;
+}
+.company-about-title {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 500;
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+.company-about-title a {
+  color: #ffffff;
+  text-decoration: none;
+}
+.company-about-title a:hover {
+  color: #ffffff;
+}
+.company-about-paragraph {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+  font-size: 2.5rem;
+  color: #ffffff;
+  padding-top: 1rem;
+}
+.company-slider-title {
+  padding-top: 4rem;
 }
 .service-slider {
   background-color: #00173e;
@@ -228,6 +296,17 @@ a:hover {
   padding: 0;
   font-size: 2.5rem;
   margin-bottom: 8rem;
+}
+.diskond-company {
+  padding: 8rem 0rem;
+  background-color: #00173e;
+}
+.diskond-company-img {
+  width: 100%;
+}
+.diskond-company-block {
+  width: 100%;
+  text-align: center;
 }
 .swiper-button-next-service:after,
 .swiper-button-prev-service:after {
@@ -1011,8 +1090,8 @@ a:hover {
     padding: 1rem 1rem;
   }
   .advantages-spec_name {
-    font-size: 1.6rem;
-    line-height: 1.7rem;
+    font-size: 1.5rem;
+    line-height: 1.6rem;
   }
   .times-title {
     font-size: 2.2rem;
@@ -1105,5 +1184,34 @@ a:hover {
   }
   .diskond-paragraph {
     font-size: 1.7rem;
+  }
+  .none {
+    display: none;
+  }
+  .companys-name {
+    font-size: 1.6rem;
+  }
+  .companys-imges {
+    margin-right: 1rem;
+  }
+  .company-cost {
+    padding: 4rem 0rem;
+  }
+  .company-cost-title {
+    margin-bottom: 3rem;
+  }
+  .company-td {
+    padding: 0.2rem 0rem;
+    font-size: 1.4rem;
+    width: 15rem;
+  }
+  .company-about {
+    padding: 4rem 0rem;
+  }
+  .company-about-title {
+    font-size: 2.4rem;
+  }
+  .company-slider-title {
+    margin-bottom: 2rem;
   }
 }
