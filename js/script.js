@@ -84,19 +84,23 @@ jQuery(document).ready(function() {
         $('body').toggleClass('lock');
         $('.header').addClass('active');
     });
+
+    $('#companysButton').click(function() {
+      $("#companysButton").html($("#companysButton").html() === '<span>Свернуть</span>'? '<span>Больше авто</span>' :'<span>Свернуть</span>');
+  });
+
+  $('#companysButton').click(function(event){
+    $('.companys-blocking').toggleClass('none');
+    $('.companys-linked').toggleClass('flex');
+    slowScroll('#companys');
+    
+  });
+
+
+
 });
 
-$('#companysButton').click(function(){
-  $('.companys-blocking').addClass('none');
-  
-  $('#companysButtonTwo').addClass('block');
-  $('.companys-linked').addClass('flex');
-  $('#companysButton').addClass('none');
-});
 
-$('#companysButtonTwo').click(function(){
-  $('.companys-blocking').addClass('block');
-  $('#companysButton').addClass('block');
-  $('.companys-linked').removeClass('flex');
-  $('#companysButtonTwo').removeClass('block');
-});
+
+
+
